@@ -1,8 +1,11 @@
-import pandas as pd
-import numpy as np
+def total_euro(Radni_sati, Zarada):
+return Radni_sati * Zarada
 
-data = {'country': ['Italy','Spain','Greece','France','Portugal'],
-'population': [59, 47, 11, 68, 10],
-'code': [39, 34, 30, 33, 351]}
-countries = pd.DataFrame(data, columns=['country', 'population', 'code'])
-print(countries)
+Radni_sati = int(input("Unos radnih sati: \n"))
+Zarada = float(input("Unos zarade: \n"))
+
+print('Radni_sati: ', Radni_sati)
+print('Zarada: ', Zarada)
+
+Ukupno = total_euro(Radni_sati, Zarada)
+print('Ukupno: ', Ukupno)
